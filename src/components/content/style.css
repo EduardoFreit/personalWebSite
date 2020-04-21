@@ -1,0 +1,103 @@
+.pageContent {
+  background-image: url(./backgroun-div.jpg);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+  border-top: 3px solid rgba(0, 0, 0, 0.342);
+  z-index: 3;
+  padding: 0;/*só garantia*/
+  margin: 0;/*só garantia*/
+}
+
+@keyframes drag-page {
+  0%{
+    height: 0%;
+  }
+  50%{
+    height: 45%;
+  }100%{
+    height: 90%;
+  }
+}
+
+@keyframes no-drag-page {
+  0%{
+    height: 90%;
+  }
+  50%{
+    height: 45%;
+  }100%{
+    height: 0%;
+  }
+}
+
+p{
+  position: relative;
+  bottom: 5px;
+}
+
+h5{
+  padding: 0;
+  position: relative;
+  bottom: 12px;
+}
+
+.profile-pic {
+  width: 85%;
+  margin: auto;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic img {
+  padding: 0;
+  margin: 0;
+  width: 165px;
+  height: 165px;
+  position: relative;
+  top: 10px;
+  border-radius: 50%;
+  border: 8px solid rgba(182, 173, 166, 0.521);
+}
+
+.perfil {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nome-apresent {
+  padding-top: 15px;
+  border-top: 3px inset rgba(0, 0, 0, 0.267);
+}
+
+#perfil-jumb {
+  padding: 10px;
+  background-color: transparent;
+  text-shadow: 1px 1px 10px rgb(102, 102, 102);
+  font-family: Georgia, "Times New Roman", Times, sans-serif;
+}
+
+.experencia {
+  padding: 5px;
+  border-top: 1px solid rgba(94, 92, 90, 0.432);
+  display: inline-flexbox;
+}
+
+.experencia ul {
+  margin: 0;
+  padding: 10;
+  justify-content: center;
+  line-height: 12pt;
+}
+
+.experencia ul li {
+  margin-right: 10px;
+  display: inline-block;
+  padding: 5px;
+  text-align: left;
+}

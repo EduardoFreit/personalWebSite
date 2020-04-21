@@ -1,0 +1,80 @@
+.icons{
+  height: 30px;
+  width: 150px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+.icons a{
+  padding: 1px;
+  position: relative;
+  top: 205px;
+}
+
+.icons img {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px #FFF; 
+  transition: all 0.5s ease;
+}
+
+.icons img:hover, #twit:hover, #zap:hover{  
+  -webkit-filter: brightness(150%);  
+}
+
+#twit{
+  opacity: 0.0;
+  right: 50px;
+  animation-name: move-icons-twit-noClick;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  
+}
+
+#zap{
+  opacity: 0.0;
+  left: 50px;
+  animation-name: move-icons-zap-noClick;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-icons-twit {
+  from {
+    right: 50px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+@keyframes move-icons-twit-noClick {
+  from {
+    right: 0px;
+  }
+  to {
+    right: 50px;
+  }
+}
+
+@keyframes move-icons-zap {
+  from {
+    left: 50px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes move-icons-zap-noClick {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 50px;
+  }
+}

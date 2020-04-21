@@ -1,0 +1,60 @@
+body {
+  background-image: url(./background.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  background-size:100% 100%;
+  overflow: hidden;
+}
+
+.cover {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+
+.cover img {
+  opacity: 0.76;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: cover-spin infinite 30s linear;
+  transition: all 0.5s ease;
+}
+
+@keyframes cover-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cover_profile .profile {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+
+.cover_profile .profile img {  
+  border-radius: 50%;
+  width: 165px;
+  height: 168px;
+  position: relative;
+  bottom: 185px;
+  box-shadow: 0px 0px 10px #FFF;
+  z-index: 1;
+}
+
+.cover_profile .profile img  {
+  -webkit-filter: brightness(90%);
+}
+
+.cover_profile .profile img:hover {
+  -webkit-filter: brightness(110%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
